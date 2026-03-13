@@ -26,5 +26,7 @@ print("\n\n")
                                                                                           
                                                                                           
                                   
-print("Now it's your turn:")
+print("2 truths an lie")
 print("i have a dog")                                  
+print("i have brother")
+print("i am lebron")
