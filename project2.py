@@ -26,7 +26,7 @@ else   :
 questionsdone += 1
 input ()
 print (f"{questionsright}/{questionsdone} right so far!")
-answer3 = input ("is your name elliot? ")
+answer3 = input ("is the teacher's name josh?")
 if answer3 == "yes":
     questionsright += 1
     print ("correct!")
