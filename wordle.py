@@ -15,44 +15,46 @@ for i in range(6):
     # Guess a word
     guess_word = input()
     output = ""
-    # First letter (in python, counting starts at 0 not 1)
-    if guess_word[0] == hidden_word[0]:
-        output += "🟩"
-    elif guess_word[0] in hidden_word:
-        output += "🟨"
-    else:
-        output += "⬛"
-    
-    # 2nd
-    if guess_word[1] == hidden_word[1]:
-        output += "🟩"
-    elif guess_word[1] in hidden_word:
-        output += "🟨"
-    else:
-        output += "⬛"
+    if len(guess_word) == 5:
+        # First letter (in python, counting starts at 0 not 1)
+        if guess_word[0] == hidden_word[0]:
+            output += "🟩"
+        elif guess_word[0] in hidden_word:
+            output += "🟨"
+        else:
+            output += "⬛"
 
-    # 3rd
-    if guess_word[2] == hidden_word[2]:
-        output += "🟩"
-    elif guess_word[2] in hidden_word:
-        output += "🟨"
-    else:
-        output += "⬛"
-    # 4th
-    if guess_word[3] == hidden_word[3]:
-        output += "🟩"
-    elif guess_word[3] in hidden_word:
-        output += "🟨"
-    else:
-        output += "⬛"
-    # 5th
-    if guess_word[4] == hidden_word[4]:
-        output += "🟩"
-    elif guess_word[4] in hidden_word:
-        output += "🟨"
-    else:
-        output += "⬛"
-    
+        # 2nd
+        if guess_word[1] == hidden_word[1]:
+            output += "🟩"
+        elif guess_word[1] in hidden_word:
+            output += "🟨"
+        else:
+            output += "⬛"
+
+        # 3rd
+        if guess_word[2] == hidden_word[2]:
+            output += "🟩"
+        elif guess_word[2] in hidden_word:
+            output += "🟨"
+        else:
+            output += "⬛"
+        # 4th
+        if guess_word[3] == hidden_word[3]:
+            output += "🟩"
+        elif guess_word[3] in hidden_word:
+            output += "🟨"
+        else:
+            output += "⬛"
+        # 5th
+        if guess_word[4] == hidden_word[4]:
+            output += "🟩"
+        elif guess_word[4] in hidden_word:
+            output += "🟨"
+        else:
+            output += "⬛"
+    else :
+        print ("use five letters")
     # Result
     print(output)
     if output == "🟩🟩🟩🟩🟩":
