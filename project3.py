@@ -21,18 +21,18 @@ t2 = create_sprite("travisscott",x2,y2)
 t3 = create_sprite("dumbcat",x3,y3)
 t4 = create_sprite("sisyphus",x4,y4)
 # sisyphus is generally fastest, then not my tempo guy, then cat, then fish.
-x1c = random.randint(8,16)
+x1c = random.randint(9,17)
 x2c = random.randint(6,13)
 x3c = random.randint(7,15)
 time.sleep(3)
 # # Section 3 - Racing
 # # TODO - set how much each variable changes by and increase the number of repeats to at least 30
 # # TODO - explain here which sprites are faster or slower
-for i in range(50):
+for i in range(45):
      x1 +=x1c
      x2 +=x2c
      x3 +=x3c
-     x4 +=random.randint(-20, 50)
+     x4 +=random.randint(-3, 8)
 
      t1.goto(x1, y1)
      t2.goto(x2, y2)
@@ -49,12 +49,12 @@ for i in range(50):
 s5 = create_sprite("peteer",-200,-200)
 s5.color("white")
 if x1 >= x2 and x1 >= x3 and x1 >= x4:
-    s5.write("tempo guy wins!", font= ("arial", 40, "normal"))
+    s5.write("tempo guy wins!", font= ("impact", 45, "normal"))
 elif x2 >= x1 and x2 >= x3 and x2 >= x4:
-    s5.write("fish wins!", font= ("arial", 40, "normal"))
+    s5.write("travis fish wins!", font= ("impact", 45, "normal"))
 elif x3 >= x1 and x3 >= x2 and x3 >= x4:
-    s5.write("cat wins!", font= ("arial", 40, "normal"))
+    s5.write("dumb cat wins!", font= ("impact", 45, "normal"))
 elif x4 >= x1 and x4 >= x3 and x4 >= x2:
-    s5.write("sisyphus wins!", font= ("arial", 40, "normal"))
+    s5.write("sisyphus wins!", font= ("impact", 45, "normal"))
 
 turtle.exitonclick()
